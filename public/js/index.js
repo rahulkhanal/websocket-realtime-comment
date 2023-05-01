@@ -49,7 +49,14 @@ function broadcastComment(data) {
 }                                                                                                                                                                                                                             
 
 socket.on("comment2", (data) => {                                                                                                                                                                                                              
-    console.log("I am connected");                                                                                                                                                                                                              
-    console.log(data);                                                                                                                                                                                                  
+    // console.log("I am connected");                                                                                                                                                                                                              
+    // console.log(data);                                                                                                                                                                                                  
     appendToDom(data)                                                                                                                                                                                                  
 })                                                                                                                                                                                                                            
+
+textarea.addEventListener('keyup', (e)=>{
+    socket.emit('typing',{username: username})
+})
+socket.on('alert', (data)=>{
+    document.querySelector('.alert-msg').innerHTML= `${data} is typing......`;
+})
