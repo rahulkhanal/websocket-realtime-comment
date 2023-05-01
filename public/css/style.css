@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+textarea{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 100px;
+    max-height: 100px;
+}
+.box-container{
+    text-align: right;
+}
+.box-container button{
+    font-size: 1.2rem;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#comment-stack{
+    list-style-type: none;
+    text-align: left;
+    width: 70%;
+    background-color: #fff;
+}
+#comment-stack li{
+    width: 100%;
+    margin: auto;
+}
