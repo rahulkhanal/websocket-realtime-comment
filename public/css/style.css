@@ -40,3 +40,17 @@ textarea{
     width: 100%;
     margin: auto;
 }
+
+li{
+    animation: something 0.6s ease forwards;
+}
+@keyframes something{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

@@ -36,6 +36,7 @@ function appendToDom(data) {
         <h3>${data.username}</h3>
         <p>${data.comment}</p>
         <div><b>${new Date().getTime()}</b></div>
+        <hr>
         <br>
     `
     ltag.innerHTML = markup
