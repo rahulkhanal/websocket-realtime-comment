@@ -54,3 +54,7 @@ li{
         opacity: 1;
     }
 }
+
+.alert-msg{
+    color: red;
+}
